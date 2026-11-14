@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://b5g6dehs3v45u"]
+
+[ext_resource type="Script" uid="uid://djcc5gvmo4hir" path="res://scripts/Main.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://i0c2tfvg0hpq" path="res://scripts/EntityVisual.gd" id="2_0xm2m"]
+
+[node name="Main" type="Node2D" unique_id=84820582]
+script = ExtResource("1_ig7tw")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1515442510]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1152.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.039215688, 0.039215688, 0.039215688, 1)
+
+[node name="EntityVisual" type="Node2D" parent="." unique_id=814967125]
+script = ExtResource("2_0xm2m")
+
+[node name="Label" type="Label" parent="." unique_id=1649604691]
+custom_minimum_size = Vector2(1152, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.5
+offset_top = -11.5
+offset_right = 1151.5
+offset_bottom = 636.5
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="GlitchOverlay" type="ColorRect" parent="." unique_id=1462036167]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Timer" type="Timer" parent="." unique_id=2044736420]
+autostart = true
+
+[node name="HorrorAudio" type="AudioStreamPlayer" parent="." unique_id=796026821]

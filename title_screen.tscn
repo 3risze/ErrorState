@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dcm8c7wqxqmj5"]
+
+[ext_resource type="Script" uid="uid://dxqwq7pmidvy5" path="res://scripts/TitleSreen.gd" id="1_v6p8y"]
+
+[node name="TitleScreen" type="Control" unique_id=1039772001]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v6p8y")
